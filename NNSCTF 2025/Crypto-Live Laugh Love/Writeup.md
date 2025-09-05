@@ -50,7 +50,7 @@ We only know `(a, b, c, ct)`. The flag is hidden inside the AES ciphertext.
 
 ---
 
-## Step 1 — First thoughts
+## Step 1 --- First thoughts
 
 When I first saw the equation
 
@@ -63,7 +63,7 @@ But the challenge description hinted at *multiple unknowns* and *small noise*. T
 
 ---
 
-## Step 2 — The math
+## Step 2 --- The math
 
 - `iv`, `key`, `noise` are all 128-bit integers  
 - `a`, `b` are ~1024-bit  
@@ -85,7 +85,7 @@ This is basically a **Closest Vector Problem (CVP)** in 2D.
 
 ---
 
-## Step 3 — Lattice embedding
+## Step 3 --- Lattice embedding
 
 We used a standard 3D Kannan embedding:
 
@@ -109,7 +109,7 @@ iv = (c - b*key - noise) // a
 
 ---
 
-## Step 4 — Exploit script
+## Step 4 --- Exploit script
 
 We didn’t overengineer this. A quick-and-dirty solver is enough.  
 Here’s the full script we used, including the given values:
@@ -188,7 +188,7 @@ print(flag.decode())
 
 ---
 
-## Step 5 — Result
+## Step 5 --- Result
 
 Running it gives:
 
@@ -211,6 +211,6 @@ NNS{LLL_IV_e_l4ugh_l0v3}
 
 ## Notes
 
-At first we thought this was unsolvable with only one equation. But after realizing the noise was small, the lattice approach fell into place. The embedding trick with `M ≈ 2^120` was the key to balance the norms and make LLL spit out the right short vector. Once we had the AES key and IV, the flag popped right out.
+At first I thought this was unsolvable with only one equation. But after realizing the noise was small, the lattice approach fell into place. The embedding trick with `M ≈ 2^120` was the key to balance the norms and make LLL spit out the right short vector. Once I had the AES key and IV, the flag popped right out.
 
 
