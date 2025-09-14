@@ -56,13 +56,12 @@ Therefore, the final 10-character code is 1BBPBBB.
 ```
 (very fast, i dont think it understood what it needs to do)
 
-### google/gemini-2.0-flash-lite-001 - 
+### google/gemini-2.0-flash-lite-001
 ```
 root
 \```
 1-2-B-A-B-A
 \```
-
 ```
 (I added the \ to not mess up the formatting)
 ### openai/gpt-5-nano
