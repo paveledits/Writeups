@@ -67,6 +67,4 @@ The final flag is:
 
 ## Notes
 
-At first I mistakenly thought it could be in San Jose (they also have a sister city sign).  
-But double checking the distances made it clear it was San Francisco.  
-This was a clean OSINT challenge and the distances served as a fingerprint uniquely pointing to the correct signpost.
+This was a clean OSINT challenge and the distances served as a unique verifier.
