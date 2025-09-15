@@ -98,5 +98,6 @@ ictf{i_guess_u_uncovered_my_identity_b1f914a9}
 - The challenge was all about **prompt injection** and **behavioral fingerprinting**.
 - Timing differences helped a lot (Gemini flash was ~1s, Qwen always over ~2 minutes, DeepSeek ~20s).
 - The system prompt tried to mask identities, but clever probes broke through.
-- Keeping structured notes of model responses was essential for matching.
+- Keeping structured notes of model responses was essential for matching.\
 
+After i had solved the challenge my API key had another $9.96 on it so i gave it out in general, others were actually using it and spent like 59 cents more.
