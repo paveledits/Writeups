@@ -15,5 +15,6 @@ Central hub for my CTF writeups. I try to maintain it clean, reproducible, and o
   > Six bloods and steady tempo; 43/60 with clean division of labor, great momentum. I solved a few from my phone 💀
 
 ---
-
-Writeup Template
+**
+[Writeup Template](https://github.com/paveledits/Writeups/blob/main/Template.md)
+**
