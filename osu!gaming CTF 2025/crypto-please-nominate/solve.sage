@@ -1,6 +1,5 @@
 #!/usr/bin/env sage -python
 
-# Sage solver using univariate Coppersmith (small_roots)
 
 from sage.all import Zmod, PolynomialRing, crt
 
@@ -45,14 +44,11 @@ def main():
     prefixes = [f"hi there {name}, ".encode() for name, _, _ in entries]
     ts = [bytes_to_long(p) * B for p in prefixes]
 
-    # Construct f_i(x) in Zmod(n_i)[x]
     polys = []
     for t, n, c in zip(ts, ns, cs):
         R.<x> = PolynomialRing(Zmod(n))
         f = (x + (t % n))^3 - c
         polys.append(f)
-
-    # Combine to modulus N via CRT coefficient-wise
     N = 1
     for n in ns:
         N *= n
@@ -64,7 +60,6 @@ def main():
         cj = crt(residues, ns)
         coeffs.append(cj % N)
     fN = sum((coeffs[j] % N) * x^j for j in range(deg + 1))
-    # Small roots search: try a few parameter sets
     roots = []
     for beta in [1.0, 0.9, 0.8, 0.7]:
         for m in [1, 2, 3]:
