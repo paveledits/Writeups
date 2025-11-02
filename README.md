@@ -12,7 +12,7 @@ I also include the challenge files and description, so you can mostly reproduce 
 
 ## 🏆 Recent events
 
-- **[**V1t CTF 2025](https://github.com/paveledits/Writeups/tree/main/V1t%20CTF%202025):** **24th / 1,237** (5,412 pts) · **45/56 solves** · **2 first bloods**
+- **[V1t CTF 2025](https://github.com/paveledits/Writeups/tree/main/V1t%20CTF%202025):** **24th / 1,237** (5,412 pts) · **45/56 solves** · **2 first bloods**
 
 - **[osu!gaming CTF 2025](https://github.com/paveledits/Writeups/tree/main/osu!gaming%20CTF%202025):** **28th / 740** (3,335 pts) · **26/43 solves**
 
