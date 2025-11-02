@@ -1,6 +1,6 @@
 # osu!gaming CTF 2025/crypto-please-nominate
 
-Writeup for the challenge `please-nominate` `crypto` category
+Writeup for the challenge `please-nominate` `crypto` category in osu!gaming CTF 2025 playing with THEM?!
 
 ------------------------------------------------------------------------
 
