@@ -12,9 +12,16 @@ I also include the challenge files and description, so you can mostly reproduce 
 
 ## 🏆 Recent events
 
+- **V1t CTF 2025:** **24th / 1,237** (5,412 pts) · **45/56 solves** · **2 first bloods**
+
+- **[osu!gaming CTF 2025](https://github.com/paveledits/Writeups/tree/main/osu!gaming%20CTF%202025):** **28th / 740** (3,335 pts) · **26/43 solves**
+
+   > Very fun ctf, loved the osu! theme!
+   
 - **[ImaginaryCTF 2025](https://github.com/paveledits/Writeups/tree/main/ICTF%202025):** **2nd / 1,414** (8,625 pts) · **Top ~0.14%** · **41/48 solves** · **4 first bloods**
 
-  > First-ever podium· First podium & prize 📅 07.09.2025; 41/48 solved, smooth handoffs (Dinosaur w/ Tao was a fun clutch).
+  > First podium & prize 📅 07.09.2025; 41/48 solved, smooth handoffs (Dinosaur w/ Tao was a fun clutch).
+  
 - **[NNSCTF 2025](https://github.com/paveledits/Writeups/tree/main/NNSCTF%202025):** **7th / 623** (11,243 pts)· **Top ~1.12%** · **43/60 solves** · **6 first bloods**
 
    > Six bloods and steady tempo; 43/60 with clean division of labor, great momentum. I solved a few from my phone 💀
