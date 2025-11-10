@@ -12,6 +12,9 @@ I also include the challenge files and description, so you can mostly reproduce 
 
 ## 🏆 Recent events
 
+- **[Infobahn CTF 2025](https://github.com/paveledits/Writeups/tree/main/Infobahn%20CTF%202025):** **15th / 803** (2,200 pts) · **18/47 solves**
+   > Very hard CTF, the cryptos were literally impossible 😭
+
 - **[V1t CTF 2025](https://github.com/paveledits/Writeups/tree/main/V1t%20CTF%202025):** **24th / 1,237** (5,412 pts) · **45/56 solves** · **2 first bloods**
    > Loved the halloween theme. Instead of going out on halloween played this CTF! Shoutout to [vizer](https://github.com/vjz3r) for organizing this CTF!
 
