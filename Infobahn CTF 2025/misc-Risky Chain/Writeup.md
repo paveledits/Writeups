@@ -13,7 +13,7 @@ Writeup for the Challenge "Risky Chain" misc category in InfobahnCTF 2025 playin
 > Metal to the future!  
 > nc riskychain.challs.infobahnc.tf 1337
 
-## Challeng
+## Challenge
 
 Given is a network service which simulates a tiny blockchain VM. The service prints a mined block summary and asks you to submit:
 
