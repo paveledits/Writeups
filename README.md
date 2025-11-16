@@ -11,6 +11,8 @@ I also include the challenge files and description, so you can mostly reproduce 
 ---
 
 ## 🏆 Recent events
+- **[PwnSec CTF 2025](https://github.com/paveledits/Writeups/tree/main/PwnSec%20CTF%202025):** **7th / 432** (5,040 pts) · **19/39 solves** · **1 first blood**
+   > I liked this CTF from our friends at [PwnSec](https://pwnsec.net). I'm looking forwards to next years edition! Put please add OSINT next time, if you promise that lol.
 
 - **[Infobahn CTF 2025](https://github.com/paveledits/Writeups/tree/main/Infobahn%20CTF%202025):** **15th / 803** (2,200 pts) · **18/47 solves**
    > Very hard CTF, the cryptos were literally impossible 😭
