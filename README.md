@@ -1,12 +1,18 @@
-# CTF Writeups w/ THEM?!
+<div align="center">
+   <h1> CTF Writeups w/ THEM?! </h1>
+   <img src="https://img.shields.io/badge/50%2B-_members-blue?link=discord.gg%2FZnszzDj2A7">
+   <img src="https://img.shields.io/badge/25%2B-completed_CTFs-orange?style=flat&link=https%3A%2F%2Fctftime.org%2Fteam%2F390919">
+   <h3> Writeups for CTFs I participated in under the team THEM?! </h3>
 
-### Writeups for CTFs I participated in under the team THEM?!
 
-
-Central hub for my CTF writeups. I try to maintain it clean, reproducible, and organized so teammates (and future-you) can replay the solves fast.
+Central hub for my CTF writeups. </br>
+I try to maintain it clean, reproducible, and organized so teammates (and future-you) can replay the solves fast.
 
 
 I also include the challenge files and description, so you can mostly reproduce it yourself.
+
+
+</div>
 
 ---
 
