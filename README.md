@@ -4,13 +4,60 @@
    <img src="https://img.shields.io/badge/25%2B-completed_CTFs-orange?style=flat&link=https%3A%2F%2Fctftime.org%2Fteam%2F390919">
    <h3> Writeups for CTFs I participated in under the team THEM?! </h3>
 
-         ++++++++++++@ ++++@     #++++     +++++++++++ =++++++++* +++++++     ++++++++++  ++++      
-       ++++++++++++++@ ++++@     +++++   +++++++++++++ =+++++++++++++++++++   ++++++++++  ++++      
-            ++++*      +++++     +++++ +++++           =++++    ++++@   +++++       +++   ++++      
-            ++++*      +++++++++++++++ ++++++++++      =++++    ++++@   +++++   +++++@    ++        
-            ++++*      +++++@@@@@+++++ +++++           =++++    ++++@   +++++   @@@@                
-            ++++*      ++++@     +++++ ++++++++++++++= =++++    ++++@   +++++   ++++@    =++++      
-            ++++*      ++++@     +++++ ++++++++++++=   =++++    ++++@   +++++   ++++@    =++++      
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+         =============  =====      =====      ============  =========  ========     ==========  ====       
+       ===============  =====      =====    ==============  =====================   ==========  ====       
+             ====       =====      =====  =====             =====    =====    ====        ===   ====       
+             ====       ================  ==========        =====    =====    ====    ======    ==         
+             ====       =====      =====  =====             =====    =====    ====                         
+             ====       =====      =====  ===============   =====    =====    ====    ====      =====      
+             ====       =====      =====  =============     =====    =====    ====    ====      =====      
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+ 
         
 Central hub for my CTF writeups. </br>
 I try to maintain it clean, reproducible, and organized so teammates (and future-you) can replay the solves fast.
@@ -25,7 +72,7 @@ I also include the challenge files and description, so you can mostly reproduce 
 
 ## 🏆 Recent events
 
-- **[0xfun CTF 2026](https://github.com/paveledits/Writeups/tree/main/0xfun%20CTF%202026):** **25th / 1359** (11,898 pts) · **19/39 solves** · **3 first bloods**🩸
+- **[0xfun CTF 2026](https://github.com/paveledits/Writeups/tree/main/0xfun%20CTF%202026):** **25th / 1359** (11,898 pts) · **68/84 solves** · **3 first bloods**🩸
    > This CTF was pretty cool (besides the infra problems💀), and there were a lot of challenges. But overall it was pretty nice, especially the UI was pretty sick. Shoutout to our friends @ [0xfun](https://0xfun.org)! 
 - **[PwnSec CTF 2025](https://github.com/paveledits/Writeups/tree/main/PwnSec%20CTF%202025):** **7th / 432** (5,040 pts) · **19/39 solves** · **1 first blood**
    > I liked this CTF from our friends at [PwnSec](https://pwnsec.net). I'm looking forwards to next years edition! Put please add OSINT next time, if you promise that lol.
