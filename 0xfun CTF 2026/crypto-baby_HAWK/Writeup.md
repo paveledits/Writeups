@@ -1,7 +1,7 @@
 # 0xfun CTF 2026/crypto-baby_HAWK
 
 Writeup for the Challenge "baby_HAWK" [crypto] in 0xfun CTF 2026 playing  
-with HAWK?!
+with THEM?!
 
 ------------------------------------------------------------------------
 
