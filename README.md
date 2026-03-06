@@ -4,7 +4,7 @@
    <img src="https://img.shields.io/badge/25%2B-completed_CTFs-orange?style=flat&link=https%3A%2F%2Fctftime.org%2Fteam%2F390919">
    <h3> Writeups for CTFs I participated in under the team THEM?! </h3>
 
-<img width="1920" height="480" alt="THEM_profile_banner_discord" src="https://github.com/user-attachments/assets/247e5117-e2a6-4790-abed-f94d32eb4526" />
+<img width="1920" height="480" alt="THEM_logo" src="https://github.com/user-attachments/assets/247e5117-e2a6-4790-abed-f94d32eb4526" />
 
 
 Central hub for my CTF writeups. </br>
