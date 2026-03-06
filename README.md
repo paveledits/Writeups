@@ -61,8 +61,12 @@ I also include the challenge files and description, so you can mostly reproduce 
 
 ## 🏆 Recent events
 
+- **[Srdnlen CTF 2026](https://github.com/paveledits/Writeups/tree/main/Srdnlen%20CTF%20Quals%202026):** **20th / 970** (1,768 pts) · **17/21 solves**
+   > This 24h CTF was literally harder than some 50 pointers. It deserves more points. Overall super fun, and amazing stetemnt about AI usage from the organizer! 
+
 - **[0xfun CTF 2026](https://github.com/paveledits/Writeups/tree/main/0xfun%20CTF%202026):** **25th / 1359** (11,898 pts) · **68/84 solves** · **3 first bloods**🩸
-   > This CTF was pretty cool (besides the infra problems💀), and there were a lot of challenges. But overall it was pretty nice, especially the UI was pretty sick. Shoutout to our friends @ [0xfun](https://0xfun.org)! 
+   > This CTF was pretty cool (besides the infra problems💀), and there were a lot of challenges. But overall it was pretty nice, especially the UI was pretty sick. Shoutout to our friends @ [0xfun](https://0xfun.org)!
+   
 - **[PwnSec CTF 2025](https://github.com/paveledits/Writeups/tree/main/PwnSec%20CTF%202025):** **7th / 432** (5,040 pts) · **19/39 solves** · **1 first blood**
    > I liked this CTF from our friends at [PwnSec](https://pwnsec.net). I'm looking forwards to next years edition! Put please add OSINT next time, if you promise that lol.
 
