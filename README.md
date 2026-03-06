@@ -61,7 +61,7 @@ I also include the challenge files and description, so you can mostly reproduce 
 
 ## 🏆 Recent events
 
-- **[Srdnlen CTF 2026](https://github.com/paveledits/Writeups/tree/main/Srdnlen%20CTF%20Quals%202026):** **20th / 970** (1,768 pts) · **17/21 solves**
+- **[Srdnlen CTF 2026](https://github.com/paveledits/Writeups/tree/main/Srdnlen%20CTF%20Quals%202026):** **20th / 970** (1,768 pts) · **Top ~2.06%** · **17/21 solves**
    > This 24h CTF was literally harder than some 50 pointers. It deserves more points. Overall super fun, and amazing stetemnt about AI usage from the organizer! 
 
 - **[0xfun CTF 2026](https://github.com/paveledits/Writeups/tree/main/0xfun%20CTF%202026):** **25th / 1359** (11,898 pts) · **68/84 solves** · **3 first bloods**🩸
