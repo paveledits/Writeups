@@ -6,7 +6,6 @@
 
 <img width="1920" height="480" alt="THEM_profile_banner_discord" src="https://github.com/user-attachments/assets/247e5117-e2a6-4790-abed-f94d32eb4526" />
 
-</br>
 
 Central hub for my CTF writeups. </br>
 I try to maintain it clean, reproducible, and organized so teammates (and future-you) can replay the solves fast.
