@@ -17,7 +17,7 @@ We were given a remote service:
 nc dot.chals.dicec.tf 1337
 ```
 
-and a Python challenge package with the SNARG code, the circuit, and `crs.bin`.
+and a [tar.gz archive](https://github.com/paveledits/Writeups/blob/main/DiceCTF%202026/crypto-dot/crypto_dot.tar.gz) with the SNARG code, the circuit, and `crs.bin`.
 
 The server asks for random 64-bit additions. For each round it expects:
 
@@ -157,7 +157,7 @@ CRS[out] - CRS[last_pair] + (b * q2_last - v_out) * G
 
 The only remaining ambiguity is the sign of `v_out`. I did not need to recover it during precomputation. I just tried both signs once on the first forged round, kept the one that worked, and reused it for the next 19 rounds.
 
-The final solver is [solve.py]().
+The final solver is [solve.py](https://github.com/paveledits/Writeups/blob/main/DiceCTF%202026/crypto-dot/solve.py).
 
 Run it with:
 
