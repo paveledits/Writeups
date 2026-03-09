@@ -11,7 +11,7 @@ Writeup for the challenge "plane-or-exchange" [crypto] in DiceCTF 2026 playing w
 
 ## Challenge
 
-The challenge shipped two files packed in an [archive]():
+The challenge shipped two files packed in an [archive](https://github.com/paveledits/Writeups/blob/main/DiceCTF%202026/crypto-plane-or-exchange/crypto_plane-or-exchange.tar.gz):
 
 - `protocol.py`
 - `public.txt`
@@ -66,7 +66,7 @@ The key observation is that `scramble()` is not creating new information. It is 
 
 So define:
 
-```text
+```
 I(X) = normalize(calculate(X))
 ```
 
@@ -74,47 +74,47 @@ Then the protocol becomes much easier to read.
 
 Because the public key is built as:
 
-```text
+```
 PubA = scramble(connect(PublicInfo, PrivA))
 PubB = scramble(connect(PublicInfo, PrivB))
 ```
 
 and `scramble()` preserves the invariant, we get:
 
-```text
+```
 I(PubA) = I(connect(PublicInfo, PrivA))
 I(PubB) = I(connect(PublicInfo, PrivB))
 ```
 
 The next useful fact is that `connect()` behaves multiplicatively on this invariant. In other words:
 
-```text
+```
 I(connect(X, Y)) = I(X) * I(Y)
 ```
 
 That gives:
 
-```text
+```
 I(PubA) = I(PublicInfo) * I(PrivA)
 I(PubB) = I(PublicInfo) * I(PrivB)
 ```
 
 Now look at the value that Alice hashes:
 
-```text
+```
 I(connect(PrivA, PubB))
 ```
 
 Using multiplicativity again:
 
-```text
+```
 I(connect(PrivA, PubB)) = I(PrivA) * I(PubB)
                         = I(PrivA) * I(PublicInfo) * I(PrivB)
 ```
 
 But from the two public keys we also have:
 
-```text
+```
 I(PubA) * I(PubB) / I(PublicInfo)
 = [I(PublicInfo) * I(PrivA)] * [I(PublicInfo) * I(PrivB)] / I(PublicInfo)
 = I(PublicInfo) * I(PrivA) * I(PrivB)
@@ -126,7 +126,7 @@ So we do not need either private key at all.
 
 The final exploit is:
 
-```text
+```
 shared_poly = I(AlicePub) * I(BobPub) / I(PublicInfo)
 shared_secret = sha256(str(shared_poly)).hexdigest()
 plaintext = ciphertext XOR expanded_key
@@ -138,13 +138,13 @@ The only practical issue is speed. Computing the determinant directly with Sympy
 
 ## Step 3 --- Exploit / Solution
 
-Now run the final solver:
+Now run the final [solver](https://github.com/paveledits/Writeups/blob/main/DiceCTF%202026/crypto-plane-or-exchange/solve.py):
 
 `python3 solve.py`
 
 Running it gives:
 
-```text
+```
 Shared polynomial: 2*t**22 - 31*t**21 + 234*t**20 - 1136*t**19 + 3959*t**18 - 10514*t**17 + 22120*t**16 - 37997*t**15 + 54813*t**14 - 68477*t**13 + 76653*t**12 - 79253*t**11 + 76653*t**10 - 68477*t**9 + 54813*t**8 - 37997*t**7 + 22120*t**6 - 10514*t**5 + 3959*t**4 - 1136*t**3 + 234*t**2 - 31*t + 2
 Shared secret: 4ce5bc3bb44ed4018cae38ffcda94bc08b85d79f0e71a012a74549c82ac91a82
 Flag: dice{plane_or_planar_my_w0rds_4r3_411_knotted_up}
@@ -154,7 +154,7 @@ Flag: dice{plane_or_planar_my_w0rds_4r3_411_knotted_up}
 
 ## Flag
 
-```text
+```
 dice{plane_or_planar_my_w0rds_4r3_411_knotted_up}
 ```
 
@@ -166,7 +166,7 @@ The intended mistake is not weak randomness or bad XOR usage by itself. The real
 
 The exploit is:
 
-```text
+```
 I(AlicePub), I(BobPub), I(PublicInfo)
 shared_poly = I(AlicePub) * I(BobPub) / I(PublicInfo)
 shared_secret = sha256(str(shared_poly))
