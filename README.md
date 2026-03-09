@@ -20,6 +20,10 @@ I also include the challenge files and description, so you can mostly reproduce 
 
 ## 🏆 Recent events
 
+
+- **[DiceCTF 2026](https://github.com/paveledits/Writeups/tree/main/DiceCTF%202026):** **87th / 497** (1,483 pts) · **Top ~17.5%** · **15/23 solves**
+   > Another 24h 💀. Plus it was a 100 pointer on CTFtime. It was definitely brutal and all the insane teams played this one. I'm proud we pushed through and solved so many hard challenges still!
+
 - **[Srdnlen CTF 2026](https://github.com/paveledits/Writeups/tree/main/Srdnlen%20CTF%20Quals%202026):** **20th / 970** (1,768 pts) · **Top ~2.06%** · **17/21 solves**
    > This 24h CTF was literally harder than some 50 pointers. It deserves more points. Overall super fun, and amazing stetemnt about AI usage from the organizer! 
 
