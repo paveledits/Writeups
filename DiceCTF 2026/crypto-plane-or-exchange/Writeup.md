@@ -4,9 +4,9 @@ Writeup for the challenge "plane-or-exchange" [crypto] in DiceCTF 2026 playing w
 
 ------------------------------------------------------------------------
 
-**Category:** Crypto
-**Author:** AdnanSlef
-**Description:** Alice and Bob had a brief exchange, and now they know something which I do not. Would you please help me to drop some Eves?
+**Category:** Crypto </br>
+**Author:** AdnanSlef </br>
+**Description:** Alice and Bob had a brief exchange, and now they know something which I do not. Would you please help me to drop some Eves? </br>
 **Flag Format:** `dice{*}`
 
 ## Challenge
