@@ -21,6 +21,8 @@ I also include the challenge files and description, so you can mostly reproduce 
 ## 🏆 Recent events
 
 
+- **[Platypwn 2026](./Platypwn%202026/OSINT-Shakey/Writeup.md)** · Shakey (OSINT), geolocating a moving vehicle in Finland.
+
 - **[DiceCTF 2026](https://github.com/paveledits/Writeups/tree/main/DiceCTF%202026):** **87th / 497** (1,483 pts) · **Top ~17.5%** · **15/23 solves**
    > Another 24h 💀. Plus it was a 100 pointer on CTFtime. It was definitely brutal and all the insane teams played this one. I'm proud we pushed through and solved so many hard challenges still!
 
