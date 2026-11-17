@@ -21,12 +21,16 @@ I also include the challenge files and description, so you can mostly reproduce 
 ## 🏆 Recent events
 
 
-- **[Platypwn 2026](./Platypwn%202026/OSINT-Shakey/Writeup.md)** · Shakey (OSINT), geolocating a moving vehicle in Finland.
+- **[Platypwn 2026](./Platypwn%202026)** **6th / 202** (12782 pts)
+   > I only solved the last challenge OSINT-Shake, while my team ripped all other challenges apart!
+
+- **[Srdnlen CTF Finals 2026](./Srdnlen%20CTF%20Finals%202026)** **5th / 11** (1284 pts)
+   > This were the in-person finals of [Srdnlen CTF Quals 2026](./Srdnlen%20CTF%20Quals%202026). It was super fun! Shoutout to the [organizers!](https://github.com/srdnlen) 
 
 - **[DiceCTF 2026](https://github.com/paveledits/Writeups/tree/main/DiceCTF%202026):** **87th / 497** (1,483 pts) · **Top ~17.5%** · **15/23 solves**
    > Another 24h 💀. Plus it was a 100 pointer on CTFtime. It was definitely brutal and all the insane teams played this one. I'm proud we pushed through and solved so many hard challenges still!
 
-- **[Srdnlen CTF 2026](https://github.com/paveledits/Writeups/tree/main/Srdnlen%20CTF%20Quals%202026):** **20th / 970** (1,768 pts) · **Top ~2.06%** · **17/21 solves**
+- **[Srdnlen CTF Quals 2026](https://github.com/paveledits/Writeups/tree/main/Srdnlen%20CTF%20Quals%202026):** **20th / 970** (1,768 pts) · **Top ~2.06%** · **17/21 solves**
    > This 24h CTF was literally harder than some 50 pointers. It deserves more points. Overall super fun, and amazing stetemnt about AI usage from the organizer! 
 
 - **[0xfun CTF 2026](https://github.com/paveledits/Writeups/tree/main/0xfun%20CTF%202026):** **25th / 1359** (11,898 pts) · **68/84 solves** · **3 first bloods**🩸
