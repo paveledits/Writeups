@@ -8,7 +8,8 @@ A writeup for **P0k3h34rtge0s1nt**, a Pokémon challenge I played with **THEM?!*
 
 ## Challenge
 
-I'd never played *Pokémon HeartGold* before. Luckily, **Agent Perry** from `$cr1pt_K1dd13$` was playing with **THEM?!**. He knew the game, explained things to me as we went, and found some of the clues too.
+I'd never played *Pokémon HeartGold* before. Luckily, [`Agent Perry`](mailto:agentperry@scr1ptk1dd13s.xyz) from [`$cr1pt_K1dd13$`](
+https://scr1ptk1dd13s.xyz/) was playing with **THEM?!**. He knew the game, explained things to me as we went, and found some of the clues too.
 
 The authors had changed some of the text in the game. We had to find five words in capitals, and there were plenty of wrong ones. Our best hint was that each person would say something pointing us to the next place.
 
