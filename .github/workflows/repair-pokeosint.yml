@@ -1,0 +1,37 @@
+name: Repair uploaded Pokémon archive part
+on:
+  push:
+    paths:
+      - '.github/workflows/repair-pokeosint.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Restore original ZIP from challenge author's public Git LFS
+        shell: bash
+        run: |
+          set -euo pipefail
+          GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/srdnlen/srdnlenctf-2026-finals_public.git "$RUNNER_TEMP/original-challenges"
+          git -C "$RUNNER_TEMP/original-challenges" lfs pull --include="misc_p0k3h34rtge0s1nt/attachments/pokeosint.zip" --exclude=""
+          src="$RUNNER_TEMP/original-challenges/misc_p0k3h34rtge0s1nt/attachments/pokeosint.zip"
+          echo "c72ba3677209a113f9a29ec9f3964fb1d3191b630cf23bf14e6e5aefb201cd9f  $src" | sha256sum -c -
+          dest="Srdnlen CTF Finals 2026/OSINT-P0k3h34rtge0s1nt"
+          head -c 24999999 "$src" > "$dest/pokeosint.zip.001"
+          echo "815880a68dfe01c8d41aada36003ddee069bba4d1b4b62180ffb0718a5964b70  $dest/pokeosint.zip.001" | sha256sum -c -
+          echo "ad80df48c9197bd5c847a107de05fad5ec4de0ddb2296b37e4b3d4a1cfd60c24  $dest/pokeosint.zip.002" | sha256sum -c -
+          echo "3a39e6a52782fc4e06865ed32c78654a78911a1e771521d219ea69f20abdadb5  $dest/pokeosint.zip.003" | sha256sum -c -
+          cat "$dest"/pokeosint.zip.00{1,2,3} > "$RUNNER_TEMP/rebuilt.zip"
+          echo "c72ba3677209a113f9a29ec9f3964fb1d3191b630cf23bf14e6e5aefb201cd9f  $RUNNER_TEMP/rebuilt.zip" | sha256sum -c -
+          unzip -t "$RUNNER_TEMP/rebuilt.zip"
+          git add -- "$dest/pokeosint.zip.001"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Replace damaged first archive part with verified bytes"
+          git push origin HEAD:main
