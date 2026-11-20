@@ -3,7 +3,6 @@ on:
   push:
     paths:
       - '.github/workflows/repair-pokeosint.yml'
-  workflow_dispatch:
 permissions:
   contents: write
 jobs:
@@ -14,20 +13,30 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Restore original ZIP from challenge author's public Git LFS
+      - name: Restore first part and verify entire archive
+        env:
+          GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
-          GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/srdnlen/srdnlenctf-2026-finals_public.git "$RUNNER_TEMP/original-challenges"
-          src="$RUNNER_TEMP/original-challenges/misc_p0k3h34rtge0s1nt/attachments/pokeosint.zip"
-          echo "LFS pointer size: $(wc -c < "$src") bytes"
-          cp "$src" "$RUNNER_TEMP/source.pointer"
-          git -C "$RUNNER_TEMP/original-challenges" lfs smudge "misc_p0k3h34rtge0s1nt/attachments/pokeosint.zip" < "$RUNNER_TEMP/source.pointer" > "$RUNNER_TEMP/pokeosint.zip"
-          src="$RUNNER_TEMP/pokeosint.zip"
-          echo "Downloaded archive size: $(wc -c < "$src") bytes"
-          echo "c72ba3677209a113f9a29ec9f3964fb1d3191b630cf23bf14e6e5aefb201cd9f  $src" | sha256sum -c -
           dest="Srdnlen CTF Finals 2026/OSINT-P0k3h34rtge0s1nt"
-          head -c 24999999 "$src" > "$dest/pokeosint.zip.001"
+          : > "$dest/pokeosint.zip.001"
+          for sha in
+            ab6fb66d4897bb7afccc56bcb2c51d197ad70903
+            d3662361165ec2cf30114aac06c074dd76648d8f
+            34d029955aefeb2d027675659d2e5109e775e978
+            f61fa6358db820f69cd01361cb5ea75fcfc2d7f8
+            45b1ebe253441b4432b6a16af0b85ecc8f9f2787
+            768757bf33bd5c89057339d6b82550ea01eb6f6d
+            6603c2cb15e31799f83aff45a4980741d6cb3987
+            eb842921e36aa2f456ddc3269fd500ae52b96db9
+            97065e6e2c5aa66c45fdf07fa091702be606d657
+            aab499e39821157e1c3338eb6f4f3a7006d831a5
+            29ca8fc449481c9d35bf12dc9d355c12a03ff6de
+            1d66cc9e68142318344e51c05e0548acb037ee74
+          do
+            curl -fsSL --retry 3 --retry-delay 1 -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/paveledits/Writeups/git/blobs/$sha" | jq -r '.content' | base64 -d >> "$dest/pokeosint.zip.001"
+          done
           echo "815880a68dfe01c8d41aada36003ddee069bba4d1b4b62180ffb0718a5964b70  $dest/pokeosint.zip.001" | sha256sum -c -
           echo "ad80df48c9197bd5c847a107de05fad5ec4de0ddb2296b37e4b3d4a1cfd60c24  $dest/pokeosint.zip.002" | sha256sum -c -
           echo "3a39e6a52782fc4e06865ed32c78654a78911a1e771521d219ea69f20abdadb5  $dest/pokeosint.zip.003" | sha256sum -c -
