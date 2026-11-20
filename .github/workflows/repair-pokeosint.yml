@@ -19,8 +19,12 @@ jobs:
         run: |
           set -euo pipefail
           GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/srdnlen/srdnlenctf-2026-finals_public.git "$RUNNER_TEMP/original-challenges"
-          git -C "$RUNNER_TEMP/original-challenges" lfs pull --include="misc_p0k3h34rtge0s1nt/attachments/pokeosint.zip" --exclude=""
           src="$RUNNER_TEMP/original-challenges/misc_p0k3h34rtge0s1nt/attachments/pokeosint.zip"
+          echo "LFS pointer size: $(wc -c < "$src") bytes"
+          cp "$src" "$RUNNER_TEMP/source.pointer"
+          git -C "$RUNNER_TEMP/original-challenges" lfs smudge "misc_p0k3h34rtge0s1nt/attachments/pokeosint.zip" < "$RUNNER_TEMP/source.pointer" > "$RUNNER_TEMP/pokeosint.zip"
+          src="$RUNNER_TEMP/pokeosint.zip"
+          echo "Downloaded archive size: $(wc -c < "$src") bytes"
           echo "c72ba3677209a113f9a29ec9f3964fb1d3191b630cf23bf14e6e5aefb201cd9f  $src" | sha256sum -c -
           dest="Srdnlen CTF Finals 2026/OSINT-P0k3h34rtge0s1nt"
           head -c 24999999 "$src" > "$dest/pokeosint.zip.001"
